@@ -3,12 +3,12 @@ var fs = require("fs");
 
 module.exports = function(app){
     //Home
-    app.get("/home", function(req, response){
-        response.sendfile(path.join(__dirname, "../html/index.html"));
+    app.get("/", function(req, response){
+        response.sendfile(path.join(__dirname, "../public/index.html"));
     });
     //Survey
     app.get("/survey", function(req, response){
-        response.sendfile(path.join(__dirname, "../html/survey.html"));
+        response.sendfile(path.join(__dirname, "../public/survey.html"));
     });
 
 };

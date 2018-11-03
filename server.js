@@ -8,10 +8,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('app'));
 
-require("./app/routing/apiRoutes.js")(app)
+require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
 
 
 app.listen(port, function () {
-    console.log("App listening on port " + port);
+    console.log("App listening on port http://localhost:" + port);
 });
